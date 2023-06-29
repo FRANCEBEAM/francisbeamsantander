@@ -1,0 +1,74 @@
+
+@import '../index';
+
+div.hero-container {
+    div.wrapper {
+        padding: 200px 1em;
+        height: 100%;
+        div.hero-content {
+            h3 {
+                color: #A181FF;
+                font-size: clamp(20px,4vw, 24px);;
+                font-weight: 800;
+            }
+            h1 {
+                color: $font-headline;
+                padding-top: 8px;
+                font-size: clamp(53px, 12vw, 72px);
+                font-weight: 900;
+                max-width: 700px;
+            }
+            p {
+                color: $font-color;
+                max-width: 500px;
+                padding-top: 8px;
+            }
+            span {
+                color: $font-headline;
+                font-weight: 700;
+            }
+
+            div.btn-content {
+                padding-top: 2em;
+
+                a.btn-projects {
+                    display: inline-flex;
+                    text-decoration: none;
+                    gap: 6px;
+                    color: $font-white;
+                    font-weight: 600;
+                    align-items: center;
+                    background: $primary-color;
+                    padding: 14px 1em;
+                    cursor: pointer;
+                    transition: all 0.25s;
+                    font-size: 14px;
+                    
+                }
+                a.btn-projects:hover {
+                    box-shadow: $font-white -1px 1px, $font-white -2px 2px, $font-white -3px 3px, $primary-color -4px 4px, $primary-color -5px 5px, $primary-color -6px 6px, $primary-color -7px 7px;
+                    transform: translate3d(8px, -6px, 0);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    div.hero-container {
+
+        div.wrapper {
+            width: 1200px;
+            margin: 0 auto;
+
+            // div.hero-content {
+            //     h1 {
+            //         width: 700px;
+            //     }
+            //     p {
+            //         width: 700px;
+            //     }
+            // }
+        }
+    }
+}

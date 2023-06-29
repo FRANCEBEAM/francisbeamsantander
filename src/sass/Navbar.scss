@@ -6,7 +6,7 @@ nav.navbar-hidden {
     transform: translateY(-100%);
   }
 
-nav.navbar-container{
+nav.navbar-container {
     position: fixed;
     width: 100%;
     background: rgba(255, 255, 255, 0.85);
@@ -15,154 +15,147 @@ nav.navbar-container{
     backdrop-filter: blur(10px);
     transition: transform 150ms ease-in-out;
     z-index: 999;
-    div.wrapper{
+
+    div.wrapper {
         padding: 1em 1em;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .logo{
-            text-decoration: none;
-            list-style: none;
-            a{
-                text-decoration: none;
-                list-style: none;
-                color: $font-color;
-            }
+
+        .menu-icon {
+            cursor: pointer;
+            z-index: 999;
         }
-        .menu-icon{
-            .navbar-icon{
-                color: #121212;
-                font-size: 30px;
-                cursor: pointer;
-            }
+
+        ul.nav-items.active {
+            left: 0;
         }
-        
-        ul.nav-items{
+
+        ul.nav-items {
+            background: #202020;
             position: absolute;
             width: 100%;
+            line-height: 80px;
+            height: 900px;
+            top: 0;
             justify-content: center;
             text-align: center;
-            line-height: 80px;
-            top: 79px;
             left: -100%;
-            transition: ease-in-out .3s;
-            li.nav-item{
-                background: $bg-color;
-                text-decoration: none;
-                list-style: none;
-                a{
-                    color: $font-color;
+            transition:  ease-in-out .3s;
+            padding-top: 80px;
+
+            li.nav-item {
+                a.nav-link {
+                    justify-content: center;
+                    text-align: center;
+                    width: 100%;
                     text-decoration: none;
                     list-style: none;
-                }
-                button#btn-resume{
-                    justify-content: center;
+                    color: $font-white;
                     display: flex;
-                    margin: 0 auto;
-                    cursor: pointer;
-                    background: transparent;
+                    transition: all 0.3s;
+                }
+                a.nav-link:hover {
+                    background-color: $primary-color;
                     font-weight: bold;
-                    color: $bg2-color;
-                    width: 50%;
-                    align-items: center;
-                    border: 2px $primary-color solid;
-                    padding: .1em .7em;
-                    gap: 10px;
-                    height: 50px;
+                    
                 }
             }
-            li.nav-item:nth-child(1){
-                animation-delay: 100ms;
-            }
-            li.nav-item:nth-child(2){
-                animation-delay: 200ms;
-            }
-            li.nav-item:nth-child(3){
-                animation-delay: 300ms;
-            }
-            li.nav-item:nth-child(4){
-                animation-delay: 400ms;
-            }
-            li.nav-item:nth-child(5){
-                animation-delay: 500ms;
-            }
-            li.nav-item:nth-child(6){
-                animation-delay: 600ms;
+            li {
+                a#btn-resume {
+                    text-decoration: none;
+                    gap: 4px;
+                    list-style: none;
+                    display: inline-flex;
+                    align-items: center ;
+                    color: $font-white;
+                    padding: 0 2em;
+                    height: 60px;
+                    background: $primary-color;
+                }
+                a#btn-resume:hover {
+                    background: #341881;
+                    transition: ease-in-out 0.3s;
+                }
             }
         }
 
-        ul.nav-items.active{
-            left: 0;
-            transition: ease-in-out .3s;
-            a{
-                color: $bg-color;
-                text-decoration: none;
-                list-style: none;
-            }
-            .nav-link{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .nav-link:hover{
-                transition: ease-in-out 0.3s;
-                background: $primary-color;
-            }
+        div.cv-container {
+            display: none;
         }
-        ul.nav-items.active.navbar-hidden{
+
+        div.cv-container.active.navbar-hidden {
             transform: translateY(-100%);
-            
         }
     }
 }
 
-@media screen and (min-width: 1200px){
-    nav.navbar-container{
+
+@media screen and (min-width: 1200px) {
+    nav.navbar-container {
         z-index: 999;
-        div.wrapper{
-            padding: 0px 1em;
+
+        div.wrapper {
+            align-items: center;
+            padding: 1em 1em;
             width: 1200px;
             margin: 0 auto;
-            
-            div.logo{
-                align-items: center;
-                display: flex;
-                a{
-                    font-size: 20px;
-                }
-            }
-            div.menu-icon{
-                    display: none;
-            }
+            display: flex;
+            justify-content: space-between;
 
-            ul.nav-items{
-                left: 0;
-                display: flex;
+            div.menu-icon {
+                display: none;
+            }
+             
+            ul.nav-items {
                 position: unset;
-                // justify-content: space-between;
-                gap: 20px;
-                align-items: center;
-                li.nav-item{
-                    font-size: 16px;
-                    background: none;
-                    button#btn-resume{
-                        width: 100%;
-                        border-radius: 6px;
-                        box-shadow: inset 0px 0px 0px 0px $primary-color;
-                        transition: all 0.25s;
-                    }
-                    button#btn-resume:hover{
-                        box-shadow: inset 130px 0 0 0 $primary-color;
-                        color: $bg-color;
-                    }
-                    .nav-link{
-                        transition: all 0.25s;
-                    }
-                    .nav-link:hover{
-                        background: unset;
+                height: 0px;
+                background: none;
+                display: flex;
+                gap: 60px;
+                padding: 0px;
+
+                li.nav-item {
+                    align-items: center;
+                    display: flex;
+                    list-style: none;
+                    text-decoration: none;
+                    a.nav-link {
                         color: $primary-color;
                     }
+                    a.nav-link:hover {
+                        color: $primary-color;
+                        background: none;
+                    }
+                }
+                li#cv-section {
+                    display: none;
+                }
+            }
+
+            div.cv-container {
+                display: block;
+                list-style: none;
+                a#btn-resume {
+                    cursor: pointer;
+                    text-decoration: none;
+                    gap: 4px;
+                    list-style: none;
+                    display: inline-flex;
+                    align-items: center ;
+                    padding: 0 1em;
+                    height: 47px;
+                    font-size: 14px;
+                    // border: 2px solid $hover-color;
+                    background: $hover-color;
+                    color: $primary-color;
+                    font-weight:600;
+                    transition: all 0.25s;
+                    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(207, 207, 207, 0.9) 0px 0px 0px 1px;
+                }
+                a#btn-resume:hover {
+                    box-shadow: inset 130px 0 0 0 $hover-fade;
+                    color: $primary-color;
                 }
 
             }
