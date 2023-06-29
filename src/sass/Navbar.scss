@@ -1,0 +1,171 @@
+
+@import '../index';
+
+
+nav.navbar-hidden {
+    transform: translateY(-100%);
+  }
+
+nav.navbar-container{
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 4px 10px rgba(85, 85, 85, 0.144);
+    border-bottom: 1px solid rgba(85, 85, 85, 0.342);
+    backdrop-filter: blur(10px);
+    transition: transform 150ms ease-in-out;
+    z-index: 999;
+    div.wrapper{
+        padding: 1em 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            text-decoration: none;
+            list-style: none;
+            a{
+                text-decoration: none;
+                list-style: none;
+                color: $font-color;
+            }
+        }
+        .menu-icon{
+            .navbar-icon{
+                color: #121212;
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+        
+        ul.nav-items{
+            position: absolute;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            line-height: 80px;
+            top: 79px;
+            left: -100%;
+            transition: ease-in-out .3s;
+            li.nav-item{
+                background: $bg-color;
+                text-decoration: none;
+                list-style: none;
+                a{
+                    color: $font-color;
+                    text-decoration: none;
+                    list-style: none;
+                }
+                button#btn-resume{
+                    justify-content: center;
+                    display: flex;
+                    margin: 0 auto;
+                    cursor: pointer;
+                    background: transparent;
+                    font-weight: bold;
+                    color: $bg2-color;
+                    width: 50%;
+                    align-items: center;
+                    border: 2px $primary-color solid;
+                    padding: .1em .7em;
+                    gap: 10px;
+                    height: 50px;
+                }
+            }
+            li.nav-item:nth-child(1){
+                animation-delay: 100ms;
+            }
+            li.nav-item:nth-child(2){
+                animation-delay: 200ms;
+            }
+            li.nav-item:nth-child(3){
+                animation-delay: 300ms;
+            }
+            li.nav-item:nth-child(4){
+                animation-delay: 400ms;
+            }
+            li.nav-item:nth-child(5){
+                animation-delay: 500ms;
+            }
+            li.nav-item:nth-child(6){
+                animation-delay: 600ms;
+            }
+        }
+
+        ul.nav-items.active{
+            left: 0;
+            transition: ease-in-out .3s;
+            a{
+                color: $bg-color;
+                text-decoration: none;
+                list-style: none;
+            }
+            .nav-link{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .nav-link:hover{
+                transition: ease-in-out 0.3s;
+                background: $primary-color;
+            }
+        }
+        ul.nav-items.active.navbar-hidden{
+            transform: translateY(-100%);
+            
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    nav.navbar-container{
+        z-index: 999;
+        div.wrapper{
+            padding: 0px 1em;
+            width: 1200px;
+            margin: 0 auto;
+            
+            div.logo{
+                align-items: center;
+                display: flex;
+                a{
+                    font-size: 20px;
+                }
+            }
+            div.menu-icon{
+                    display: none;
+            }
+
+            ul.nav-items{
+                left: 0;
+                display: flex;
+                position: unset;
+                // justify-content: space-between;
+                gap: 20px;
+                align-items: center;
+                li.nav-item{
+                    font-size: 16px;
+                    background: none;
+                    button#btn-resume{
+                        width: 100%;
+                        border-radius: 6px;
+                        box-shadow: inset 0px 0px 0px 0px $primary-color;
+                        transition: all 0.25s;
+                    }
+                    button#btn-resume:hover{
+                        box-shadow: inset 130px 0 0 0 $primary-color;
+                        color: $bg-color;
+                    }
+                    .nav-link{
+                        transition: all 0.25s;
+                    }
+                    .nav-link:hover{
+                        background: unset;
+                        color: $primary-color;
+                    }
+                }
+
+            }
+        }
+    }
+}
