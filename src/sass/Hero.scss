@@ -3,9 +3,49 @@
 
 div.hero-container {
     div.wrapper {
-        padding: 200px 1em;
-        height: 100%;
+        padding: 0 1em;
+        height: 700px;
+        margin: auto;
+        width: 100%;
+
+        .palette {
+            display: none;
+        }
+
+        .curlybraces {
+            display: none;
+        }
+
+        .htmlcoding {
+            display: none;
+        }
+
+        .spiral {
+            display: none;
+        }
+
+        .zigzagline {
+            display: none;
+        }
+
+        .hero-francis {
+            bottom: 0;
+            display: none;
+        }
+
+        .blobs {
+            display: none;
+        }
+
+        .left-orientation {
+            display: none;
+        }
+
         div.hero-content {
+            padding-top: 200px;
+            top: 50%;
+            left:50%;
+            
             h3 {
                 color: #A181FF;
                 font-size: clamp(20px,4vw, 24px);;
@@ -14,7 +54,7 @@ div.hero-container {
             h1 {
                 color: $font-headline;
                 padding-top: 8px;
-                font-size: clamp(53px, 12vw, 72px);
+                font-size: clamp(53px, 11vw, 72px);
                 font-weight: 900;
                 max-width: 700px;
             }
@@ -58,17 +98,124 @@ div.hero-container {
     div.hero-container {
 
         div.wrapper {
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
+            position: relative;
 
-            // div.hero-content {
-            //     h1 {
-            //         width: 700px;
-            //     }
-            //     p {
-            //         width: 700px;
-            //     }
-            // }
+            .palette {
+                display: block;
+                position: absolute;
+                top: 464px;
+                right: 70px;
+            }
+
+            .curlybraces {
+                display: block;
+                position: absolute;
+                top: 330px;
+                right: 510px;
+            }
+
+            .htmlcoding {
+                display: block;
+                position: absolute;
+                top: 127px;
+                right: 280px;
+            }
+
+            .spiral {
+                display: block;
+                position: absolute;
+                top: 260px;
+                z-index: 3;
+                right: 80px;
+            }
+
+            .zigzagline {
+                display: block;
+                position: absolute;
+                top: 540px;
+                z-index: 2;
+                right: 490px;
+            }
+
+            .hero-francis {
+                display: block;
+                position: absolute;
+                right: 100px;
+                z-index: 1;
+            }
+            
+
+            .blobs {
+                position: absolute;
+                display: block;
+                top: 314px;
+                right: 110px;
+                z-index: 0;
+            }
+
+            .left-orientation{
+                position: absolute;
+                display: block;
+                bottom: 0;
+                right: 0px;
+                animation-delay: 4500ms;
+            ul.left-socials{
+                display: flex;
+                flex-direction: column;
+                gap: 1.4em;
+                list-style: none;
+                li.gmail{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    a{
+                        color: $font-color;
+                        font-size: 14px;
+                        font-weight:500;
+                        font-family: $font-firacode;
+                        writing-mode: vertical-rl;
+                        text-decoration: none;
+                    }
+        
+                }
+                li.line{
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 90px;
+                    margin: 0px auto;
+                    background: #666666;
+                }
+            }
+
+            ul.left-socials{
+                position: relative;
+                li.social{
+                   a{
+                    position: relative;
+                    display: block;
+                    transition: all 0.4s;
+                   }
+                    a:hover{    
+                        color: $primary-color;
+                        transform: rotate(0deg) skew(0deg) translate(0, -6px);  
+                    }
+                }
+                li.gmail{
+                    a{
+                        position: relative;
+                        display: block;
+                        transition: all 0.4s;
+                       }
+                    a:hover{    
+                        color: $primary-color;
+                        transform: rotate(0deg) skew(0deg) translate(0, -10px);  
+                    }
+                }
+            }
+        }
         }
     }
 }

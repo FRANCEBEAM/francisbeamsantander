@@ -1,0 +1,40 @@
+
+@import '../index.scss';
+
+div.about-container {
+    background: $bg2-color;
+
+    .wrapper {
+        padding: 100px 1em;
+        min-height: 100vh;
+        width: 100%;
+        margin: auto;
+        color: $font-white;
+
+        // .left-content {
+        //     border: 2px solid white;
+        // }
+
+        .left-content {
+            span.francisbeam {
+                background-image: url(https://unsplash.com/photos/e616t35Vbeg../assets/francisbeamsantander.jpg);
+                background-size: cover;
+                display: block;
+              }
+        }
+        
+
+        .right-content {
+            padding-top: 70px;
+            h1 {
+                padding-bottom: 20px;
+                font-weight: 900;
+            }
+            p {
+                padding-bottom: 2em;
+            }
+        }
+    }
+
+
+}
