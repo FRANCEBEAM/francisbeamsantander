@@ -94,14 +94,10 @@ div.hero-container {
     }
 }
 
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1080px) {
     div.hero-container {
-
         div.wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-
             .palette {
                 display: block;
                 position: absolute;
@@ -122,6 +118,18 @@ div.hero-container {
                 top: 127px;
                 right: 280px;
             }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    div.hero-container {
+
+        div.wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
 
             .spiral {
                 display: block;
