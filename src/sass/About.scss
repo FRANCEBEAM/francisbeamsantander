@@ -11,6 +11,9 @@ div.about-container {
         display: flex;
         justify-content: center;
         background-position: center;
+        top: 500px;
+        height: auto;
+        background-color: $bg2-color;
         
 
         svg.mountains {
@@ -82,7 +85,7 @@ div.about-container {
             z-index: 4;
             h1 {
                 padding-top: 20px;
-             
+                padding-bottom: 10px;
                 margin-bottom: 60px;
                 font-weight: 900;
                 position: relative;
@@ -100,10 +103,11 @@ div.about-container {
                 
             }
             h1::after {
+                border-radius: 2px;
                 display: block;
                 position: absolute;
                 content: "";
-                width: 70px;
+                width: 50px;
                 bottom: 0;
                 height: 4px;
                 background-color: $line-color;
@@ -150,10 +154,14 @@ div.about-container {
             top: 980px;
             right: 0;
         }
+
+        div.svg-container {
+            top: 515px;
+        }
+
         .wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            
             align-items: center;
             .left-content {
                 padding-top: 120px;
