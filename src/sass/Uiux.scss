@@ -1,0 +1,140 @@
+
+@import '../index.scss';
+
+
+
+div.uiux-container {
+    div.wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        div.showmore{
+        justify-content: center;
+        display: flex;
+        padding-top: 4em;
+        padding-bottom: 4em;
+
+        button.btn-showmore{
+            font-size: 16px;
+            cursor: pointer;
+            background: transparent;
+            border: 2px solid $primary-color;
+            padding: 1em 2.6em;
+            font-weight: bold;
+            color: $primary-color;
+            font-family: $font-firacode;
+            text-decoration: none;
+        }
+
+        button.btn-showmore:hover{
+            background: $primary-color;
+            color: $bg-color;
+            transition: ease-in-out 0.3s;
+        }
+    }
+        .head-container {
+            display: flex;
+            justify-content: center;
+        }
+        h1.header-uiux{
+            font-size: clamp(26px, 7vw, 32px);
+            font-weight: 900;
+            color: $primary-color;
+            text-align: center;
+            justify-content: center;
+
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        h1.header-uiux {
+            padding-top: 56px;
+            padding-bottom: 10px;
+            margin-bottom: 60px;
+            font-weight: 900;
+            position: relative;
+            display: inline-block;
+        }
+        h1.header-uiux::before {
+            display: block;
+            background: #DDDDDD;
+            position: absolute;
+            content: "";
+            width: 100%;
+            bottom: 0;
+            height: 4px;
+            border-radius: 2px;
+            
+        }
+        h1.header-uiux::after {
+            border-radius: 2px;
+            display: block;
+            position: absolute;
+            content: "";
+            width: 50px;
+            bottom: 0;
+            height: 4px;
+            background-color: $line-color;
+        }
+
+        div.uiux-container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            div.card-container {
+                max-width: 500px;
+                margin: 1em;
+    
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    div.uiux-container {
+
+
+        div.card-container {
+            max-width: 350px;
+        }
+
+    }
+}
+
+
+
+@media screen and (min-width: 1162px) {
+
+    div.uiux-container {
+
+
+        div.card-container {
+            max-width: 300px;
+        }
+
+    }
+}
+
+// @media screen and (min-width: 1024px) {
+
+//     div.wrapper {
+//         flex-basis: 50%;
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     div.wrapper {
+//         flex-basis: 100%;
+//     }
+// }
+
+
+
+

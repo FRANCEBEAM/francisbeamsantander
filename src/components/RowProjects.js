@@ -15,7 +15,7 @@ const RowProjects = () => {
 
   return (
     <>
-   <div className='project-section' id="projects">
+   <section className='project-container' id="projects">
         <div className='wrapper'>
             <div className="head-projectcontainer">
                 <h1 className='head-projects'>PROJECTS</h1>
@@ -77,7 +77,7 @@ const RowProjects = () => {
             </div>
 
         </div>
-    </div>
+    </section>
     </>
   )
 }

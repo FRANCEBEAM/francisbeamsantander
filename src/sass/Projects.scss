@@ -1,11 +1,11 @@
 @import '../index.scss';
 
 
-div.project-section{
+section.project-container{
     background: $bg-color;
     div.wrapper{
         padding: 100px 1em;
-        min-height: 100vh;
+        // min-height: 100vh;
         
         .head-projectcontainer {
             display: flex;
@@ -148,7 +148,7 @@ div.project-section{
 }
 
 @media screen and (min-width: 768px){
-    div.project-section{
+    section.project-container{
         div.wrapper{        
             margin: 0px auto;
             max-width: 1000px;
@@ -167,10 +167,12 @@ div.project-section{
                 
                     div.left{
                         grid-area: left;
+
                         p.project-description{
                             max-width: 530px;
                             position: absolute;
                         }
+
                         ul.tech-items:nth-child(even){
                             padding-top: 137px;
                         }
@@ -191,10 +193,13 @@ div.project-section{
                         padding-right: 1em;
                         div.sub-container{
                             li.sub-content{
-                                justify-content: right;
-                                display: flex;
+                                
                                 text-align: right;
                             }
+                        }
+                        div.sub-container {
+                            display: flex;
+                            justify-content: right;
                         }
                         h1.head-content{
                             text-align: right;
@@ -206,6 +211,8 @@ div.project-section{
                         }
                         ul.tech-items{
                             padding-top: 137px;
+                            display: flex;
+                            justify-content: flex-end;
                             li.tech-item{
                                text-align: right;  
                             }

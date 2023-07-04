@@ -7,7 +7,7 @@ import { FiGithub, FiFacebook } from 'react-icons/fi'
 const Hero = () => {
   return (
     <>
-    <div className='hero-container'>
+    <section className='hero-container' id='home'>
         <div className='wrapper'>
 
         <svg className='palette' width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +100,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     </>
   )
 }

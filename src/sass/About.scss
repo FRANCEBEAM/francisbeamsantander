@@ -1,7 +1,7 @@
 
 @import '../index.scss';
 
-div.about-container {
+section.about-container {
     background: $bg2-color;
     width: 100%;
     overflow: hidden;
@@ -140,7 +140,7 @@ div.about-container {
 }
 
 @media screen and (min-width: 768px) {
-    div.about-container {
+    section.about-container {
         .dottedfade {
             display: block;
             position: absolute;
@@ -195,7 +195,7 @@ div.about-container {
 }
 
 @media screen and (min-width: 1200px) {
-    div.about-container {
+    section.about-container {
         .wrapper {
             max-width: 1200px;
             margin: 0 auto;

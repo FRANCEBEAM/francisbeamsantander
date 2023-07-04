@@ -1,0 +1,117 @@
+@import '../index';
+
+
+section.work-container{
+    div.wrapper{
+        padding: 100px 1em;
+        min-height: 100vh;
+        background: $bg3-color;
+        h1{
+            font-size: clamp(36px, 7vw, 38px);
+            color: $primary-color;
+            text-align: center;
+        }
+        p{
+            padding-top: 16px;
+            color: $font-color;
+            text-align: center;
+            line-height: 24px;
+        }
+        div.card-container{
+            padding-top: 60px;
+            div.card-work{
+                background: $bg-color;
+                border: 1px solid #666666;
+                border-radius: 7px;
+                max-width: 290px;
+                margin: 0 auto 32px;
+            
+                div.work-icon{
+                    margin: 14px;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    color: $font-color;
+                    p{
+                        align-items: center;
+                        text-align: center;
+                        color: $primary-color;
+                        font-size: 20px;
+                        font-weight: bold;
+                        
+                    }
+                }
+                div.work-description{
+                    p{
+                        line-height: 20px;
+                        align-items: center;
+                        text-align: center;
+                        margin: 0 20px;
+                        color: $font-color;
+                        font-size: 14px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 578px){
+    section.work-container{
+        div.wrapper{
+            div.card-container{
+                display: flex;
+                flex-wrap: wrap;
+                div.card-work{
+                    max-width: 252px;
+                div.work-icon{
+                   font-size: 30px;
+                        p{            
+                            font-size: 18px;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    section.work-container{
+        div.wrapper{
+            p.specialize{
+                margin: 0 auto;
+                width: 520px;
+            }
+            div.card-container{
+                div.card-work{
+                    max-width: 276px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 888px){
+    section.work-container{
+        div.wrapper{
+            div.card-container{
+                margin: 0 auto;
+                gap: 7px;
+                width: 890px;
+                div.card-work{
+                    cursor: default;
+                    transition: all 0.25s;
+                }
+                div.card-work:hover{
+                    border-bottom: $primary-color;
+                    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+                    box-shadow: $primary-color 0px 1px, $primary-color 0px 2px, $primary-color 0px 3px, $primary-color 0px 4px, $primary-color 0px 5px, $primary-color 0px 6px;
+                }
+            }
+        }
+    }
+}
+

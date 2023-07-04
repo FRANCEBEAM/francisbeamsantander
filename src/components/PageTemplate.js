@@ -97,8 +97,8 @@ export const projects = [
         title: 'Netflix Clone React',
         sub: [
             'Movie',
-            'Fun',
-            'Services'
+            'Subscription',
+            'Streaming-Service'
         ],
         technologies: [
             'React ',
@@ -129,7 +129,7 @@ export const projects = [
     }
 ]
 
-export const OtherProjectData = [
+export const otherProject = [
     {
         id: 1,
         title: 'Drum pad App',
@@ -154,4 +154,39 @@ export const OtherProjectData = [
         gitHubLink: 'https://github.com/FRANCEBEAM/Form-Validation-Community',
         hostLink: 'https://francebeam.github.io/Form-Validation-Community/'
     },
+    {
+        id: 4,
+        title: 'Form Validation Community',
+        description: 'Creating form validation from scratch, which involves the use of RegEx and DOM. It follows standard validation practices that ensure the UI behaves according to the user\'s input, capturing any key input accurately. dwadawdadawdawdawdadawdawdawdawdawdawdad dwadawdawd adawdwadawdwadadaw dwawda dadawda dada',
+        technologies: ['HTML ', 'CSS ', 'JavaScript '],
+        gitHubLink: 'https://github.com/FRANCEBEAM/Form-Validation-Community',
+        hostLink: 'https://francebeam.github.io/Form-Validation-Community/'
+    },
+]
+
+export const uiux = [
+    {
+        id: 1,
+        link: "/",
+        img: "./assets/uiux1.jpg",
+        alt: "UI/UX 1",
+    },
+    {
+        id: 2,
+        link: "/",
+        img: "./assets/uiux2.jpg",
+        alt: "UI/UX 2",
+    },
+    {
+        id: 3,
+        link: "/",
+        img: "./assets/uiux3.jpg",
+        alt: "UI/UX 3",
+    },
+    {
+        id: 4,
+        link: "/",
+        img: "./assets/uiux4.jpg",
+        alt: "UI/UX 4",
+    }
 ]

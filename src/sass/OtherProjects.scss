@@ -1,21 +1,55 @@
 @import '../index.scss';
 
-div.other-container{
+section.other-container {
     background: $bg-color;
-    h1.other-head{
-        padding-top: 86px;
-        text-align: center;
-        font-size: clamp(36px, 7vw, 37px);
+
+    div.head-container {
+        display: flex;
+        justify-content: center;
     }
+
+    h1.other-head{
+        padding-top: 56px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-weight: 900;
+        position: relative;
+        color: $primary-color;
+        font-size: clamp(26px, 7vw, 32px);
+        display: inline-block;
+    }
+
+    h1.other-head::before {
+        display: block;
+        background: #DDDDDD;
+        position: absolute;
+        content: "";
+        width: 100%;
+        bottom: 0;
+        height: 4px;
+        border-radius: 2px;
+    }
+
+    h1.other-head::after {
+        border-radius: 2px;
+        display: block;
+        position: absolute;
+        content: "";
+        width: 50px;
+        bottom: 0;
+        height: 4px;
+        background-color: $line-color;
+    }
+
     div.wrapper{
-        padding: 3em 1em;
+        padding: 4em 1em;
         // margin: 0 auto;
-        min-height: 100vh;
+        // min-height: 100vh;
         justify-content: center;
         a.card-project{
             max-width: 346px;
             height: 100%;
-            padding-top: 26px;
+            padding-top: 6px;
             margin: 0 auto;
             list-style: none;
             text-decoration: none;
@@ -23,7 +57,7 @@ div.other-container{
             justify-content: center;
             div.card-content{
                 height: 100%;
-                background: $bg3-color;
+                background: $bg-color;
                 border: 3px solid #E1E1E1;
                 box-shadow: 0px 4px 10px rgba(65, 53, 67, 0.15);
                 padding: 1.4em 2em;
@@ -127,46 +161,81 @@ div.other-container{
     //     }
     //     button.btn-showmore:hover{
     //         background: $primary-color;
-    //         color: $bg3-color;
+    //         color: $bg2-color;
     //         transition: ease-in-out 0.3s;
     //     }
     // }
 }
 
-
-@media screen and (min-width: 768px){
-    div.other-container{
-        div.wrapper{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
+@media screen and (min-width: 600px) {
+    section.other-container {
+        div.wrapper {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 20px;
-            a.card-project{
-                padding-top: 7px;
-            }
         }
     }
 }
 
-@media screen and (min-width: 1200px){
-    div.other-container{
-        div.wrapper{
+@media screen and (min-width: 980px) {
+    section.other-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        div.wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             margin: 0 auto;
-            justify-content: left;
-            display: flex;
-            a.card-project {
-                flex: 0 0 31%;
-                margin: 0px;
-            }
-            // display: inline-flex;
-            // a.card-project{
-            //     gap: 1px;
-            //     flex: 1fr 1fr 1fr;
-            //     // height: 100%;
-            //     // display: inline-block;
-            //     // width: 2160px;
-            // }
-     
+            padding: 60px 6em;
+        }
+        a.card-project {
+            justify-content: center;
+            max-width: 900px;
         }
     }
+
 }
+
+// @media screen and (min-width: 768px){
+//     section.other-container{
+//         div.wrapper{
+//             margin: 0 auto;
+//             display: flex;
+//             flex-wrap: wrap;
+//             flex-direction: row;
+//             gap: 20px;
+//             a.card-project{
+//                 max-width: 500px;
+//                 padding-top: 7px;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 900px) {
+//     section.other-container{
+//         div.wrapper{
+//                 justify-content: left;
+//                 display: flex;
+//                 width: 100px;
+//                 gap: 50px;
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 1000px){
+//     section.other-container{
+//         div.wrapper{
+//             margin: 0 auto;
+//             max-width: 1200px;
+//             justify-content: space-between;
+//             display: flex;
+//             a.card-project {
+//                 max-width: 376px;
+//                 flex: 0 0 31%;
+//                 margin: 0px;
+//                 flex-basis: auto;
+//             }  
+//         }
+//     }
+// }

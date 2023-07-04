@@ -25,7 +25,7 @@ const About = () => {
 
   return (
     <>
-        <div className='about-container'>
+        <section className='about-container' id='about'>
 
             <img className='dottedfade' draggable="false" src="./assets/dottedfade.svg" alt="dotted fade" />
             
@@ -312,7 +312,7 @@ const About = () => {
                 </svg>
 
                 </div>
-        </div>
+        </section>
     </>
   )
 }

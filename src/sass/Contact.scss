@@ -1,0 +1,161 @@
+@import '../index.scss';
+
+section.contact-container{
+    background: $bg-color;
+    div.wrapper{
+        padding: 100px 1em;
+        min-height: 100vh;
+        h1{
+            font-size: clamp(24px, 6vw, 36px);
+            text-align: center;
+            color: $primary-color;
+        }
+        p{
+            padding-top: 30px;
+            text-align: center;
+            color: $font-color;
+            line-height: 20px;
+            margin: 0 auto;
+            max-width: 426px;
+        }
+        div.socials-content{
+            display: none;
+        }
+        form.form-content{
+            padding-top: 56px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .form-label{
+                padding-top: 37px;
+                label{
+                    font-weight: 600;
+                    color: $font-color;
+                    width: 100%;
+                    font-size: 20px;
+                }
+                input{
+                    font-size: 17px;
+                    border: none;
+                    padding: 1em 0px;
+                    border-bottom: 1px solid $font-color;
+                    width: 100%;
+                }
+                input.input-name:focus{
+                    outline: none;
+                }
+                input.input-email:focus{
+                    @extend.input-name;
+                }
+            }
+
+            textarea.input-message{
+                font-size: 17px;
+                padding: 1em 0px;
+                border: none;
+                border-bottom: 1px solid $font-color;
+                width: 100%;
+                
+            }
+            textarea.input-message:focus{
+               outline: none;
+            }
+
+            button.btn-send{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-top: 2em;
+                cursor: pointer;
+                padding: .9em 2em;
+                background: transparent;
+                border: 2px solid $primary-color;
+                color: $primary-color;
+                font-size: 20px;
+                letter-spacing: 4px;
+                font-weight: bold;
+                box-shadow: inset 0 0 0 0 $primary-color;
+                transition: ease-out 0.4s;
+            }
+            button.btn-send:hover{
+                box-shadow: inset 400px 0 0 0 $primary-color;
+                color: $bg3-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:402px){
+    section.contact-container{
+        div.wrapper{
+            form.form-content{
+                button.btn-send{
+                    margin: 3em auto;
+                    width: 302px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 856px){
+    section.contact-container{
+        div.wrapper{
+            form.form-content{
+              
+                div.grid-content{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 50px;
+                    grid-template-areas: 'left right';
+                }
+
+       
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 930px){
+    section.contact-container{
+        div.wrapper{
+            max-width: 930px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    section.contact-container{
+        div.wrapper{
+            div.socials-content{
+                display: block;
+                ul.item-socials{ 
+                    padding: 0px 5em;
+                    display: flex;
+                    position: absolute;
+                    flex-direction: column;
+                    right: 0;
+                    gap: 27px;
+                    justify-content: center;
+                    li.item-social{
+                    list-style: none;
+                        a{
+                            display: block;
+                            color: $font-color;
+                        }
+                        a:hover{
+                            color: $primary-color;
+                            transition: ease-in-out 0.3s;
+                            transform: rotate(0deg) skew(0deg) translate(0, -6px);  
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

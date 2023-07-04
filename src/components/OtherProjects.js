@@ -1,5 +1,9 @@
 import React from 'react';
 import '../sass/OtherProjects.scss';
+import { otherProject } from './PageTemplate';
+import { Link  } from 'react-router-dom';
+import { FaRegFolder } from 'react-icons/fa'
+import { FiGithub, FiExternalLink } from 'react-icons/fi'
 
 const OtherProjects = () => {
 
@@ -12,16 +16,18 @@ const OtherProjects = () => {
 
   return (
     <>
-    <div className='other-container'>
-         <h1 className='other-head'>Other Projects</h1> 
+    <section className='other-container'>
+        <div className="head-container">
+            <h1 className='other-head'>OTHER PROJECTS</h1> 
+        </div>
         <div className='wrapper'> 
             {
-                OtherProjectData.map((item, index)=>{
+                otherProject.map((item, index)=>{
                     return(
                     <Link className='card-project' key={index} to={item.hostLink} data-aos="fade-up">
                         <div className='card-content' to={item.hostLink}>
                             <div className='project-icons'>
-                                <FaRegFolder size={36} color='#332FD0'/>
+                                <FaRegFolder size={36} color='#3D155F'/>
                                 <ul className='project-links'>
                                     <li className='project-link'>
                                         <Link className='link' to={item.gitHubLink}>
@@ -54,12 +60,7 @@ const OtherProjects = () => {
                 })
             }
         </div>
-        {/* <div className='showmore'>
-            <button className='btn-showmore' type='button'> 
-                Show More
-            </button>
-        </div> */}
-    </div>
+    </section>
     </>
   )
 }

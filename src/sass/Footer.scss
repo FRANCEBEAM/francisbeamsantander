@@ -1,0 +1,95 @@
+@import '../index.scss';
+
+footer.footer-container{
+    div.wrapper{
+        padding: 56px 1em;
+        margin-top: 86px;
+        background: $font-color;
+        min-height: 100vh;
+        div.first-row{
+            color: $bg-color;
+            ul.col-1{
+                list-style: none;
+                align-items: center;
+                li{
+                    padding-top: 24px;
+                    gap: 9px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            ul.col-2{
+                padding-top: 26px;
+                list-style: none;
+                li{
+                    padding-top: 24px;
+                    gap: 26px;
+                    display: flex;
+                    align-items: center;
+                }
+                a{
+                    text-decoration: none;
+                    color: $bg-color;
+                }
+            }
+        }
+        div.second-row{
+            border-top: 2px solid #FFFFFF;
+            margin-top: 57px;
+            padding-top: 36px;
+            p{
+                font-size: 16px;
+                color: $bg-color;
+            }
+            ul.socials{
+               display: flex;
+               padding-top: 46px;
+               gap: 27px;
+                li{
+                    list-style: none;
+                    a{
+                        color: $bg-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    footer.footer-container{
+        div.wrapper{
+            div.first-row{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4em;
+                ul.col-2{
+                    li{
+                        padding-top: 24px;
+                    }
+                }
+            }
+            div.second-row{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-top: 46px;
+                display: flex;
+                justify-content: space-between;
+                ul.socials{
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+    footer.footer-container{
+        background: $font-color;
+        div.wrapper{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+}
+
