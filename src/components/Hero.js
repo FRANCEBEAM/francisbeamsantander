@@ -93,7 +93,7 @@ const Hero = () => {
                 <p>I build amazing <span>website</span>, and <span>web design</span> for quality products with great user experiences and passionate of creating interactive. Let’s build and work together.</p>
 
                 <div className='btn-content'>
-                    <Link to='/' className="btn-projects" href="">
+                    <Link to='/projects' className="btn-projects" href="">
                         MY PROJECTS
                         <HiOutlineArrowNarrowRight size={24} />
                     </Link>

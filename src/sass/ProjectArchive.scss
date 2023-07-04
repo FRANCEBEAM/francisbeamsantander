@@ -1,0 +1,52 @@
+
+@import '../index.scss';
+
+section.archive-section {
+    div.wrapper {
+        padding: 0 1em;
+        div.card-project {
+            text-decoration: none;
+            padding-bottom: 4em;
+            .head-content {
+                display: inline-flex;
+                align-items: center;
+                text-decoration: none;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                gap: 12px;
+                h1 {
+                    color: $font-color;
+                }
+                h1:hover {
+                    color: $font-headline;
+                }
+            }
+            div.img-content {
+                img {
+                    width: 200px;
+                }
+            }
+            div.content {
+                p{
+                    line-height: 19px;
+                    font-size: 14px;
+                    color: $font-color
+                }
+                ul {
+                    padding-top: 14px;
+                    display: flex;
+                    gap: 6px;
+                    list-style: none;
+                    font-size: 11px;
+                    li {
+                        font-weight: 700;
+                        padding: 9px;
+                        color: $primary-color;
+                        background: $badge;
+                    }
+                }
+
+            }
+        }
+    }
+}

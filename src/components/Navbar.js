@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import '../sass/Navbar.scss'
-import { HashLink as Link } from 'react-router-hash-link'
-import { HiOutlineDocumentDownload } from 'react-icons/hi'
-import { FaTimes } from 'react-icons/fa'
-import { HiOutlineMenuAlt3, HiX } from 'react-icons/hi'
+import React, { useEffect, useState } from 'react';
+import '../sass/Navbar.scss';
+import { HashLink as Link } from 'react-router-hash-link';
+import { HiOutlineDocumentDownload } from 'react-icons/hi';
+import { HiOutlineMenuAlt3, HiX } from 'react-icons/hi';
 import useScrollListener from "../hooks/UseScroll";
 
 
@@ -27,13 +26,14 @@ const Navbar = () => {
       setNavClassList(_classList);
     }, [scroll.y, scroll.lastY]);
 
+
   return (
     <>
     <nav className={`navbar-container ${navClassList.join(" ")}`} >
       <div className='wrapper'>
 
         <div className='logo'>
-            <Link className='animate__animated animate__fadeInDown' to="#home" onClick={closeMobileMenu}>
+            <Link className='animate__animated animate__fadeInDown' to="/" onClick={closeMobileMenu}>
               <img src="./assets/fblogovar1.svg" width={50}  alt="" />
             </Link>
         </div>
@@ -53,13 +53,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='animate__animated animate__fadeInDown nav-item'>
-            <Link className="nav-link" to="#work">
-              Work
+            <Link className="nav-link" to="#projects">
+              Projects
             </Link>
           </li>
           <li className='animate__animated animate__fadeInDown nav-item'>
-            <Link className="nav-link" to="#projects">
-              Projects
+            <Link className="nav-link" to="#work">
+              Work
             </Link>
           </li>
           <li className='animate__animated animate__fadeInDown nav-item'>

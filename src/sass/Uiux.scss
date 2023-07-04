@@ -14,7 +14,7 @@ div.uiux-container {
         padding-top: 4em;
         padding-bottom: 4em;
 
-        button.btn-showmore{
+        a.btn-showmore{
             font-size: 16px;
             cursor: pointer;
             background: transparent;
@@ -26,7 +26,7 @@ div.uiux-container {
             text-decoration: none;
         }
 
-        button.btn-showmore:hover{
+        a.btn-showmore:hover{
             background: $primary-color;
             color: $bg-color;
             transition: ease-in-out 0.3s;

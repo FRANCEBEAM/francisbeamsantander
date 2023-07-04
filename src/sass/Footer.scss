@@ -6,6 +6,9 @@ footer.footer-container{
         margin-top: 86px;
         background: $font-color;
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         div.first-row{
             color: $bg-color;
             ul.col-1{

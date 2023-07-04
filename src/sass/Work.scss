@@ -5,6 +5,9 @@ section.work-container{
     div.wrapper{
         padding: 100px 1em;
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background: $bg3-color;
         h1{
             font-size: clamp(36px, 7vw, 38px);

@@ -47,7 +47,7 @@ const RowProjects = () => {
                                     {project.title}
                                 </h1>
                                 <p className='project-description'>
-                                    {truncate(project.desc, 390)}
+                                    {truncate(project.desc, 350)}
                                 </p>
                                 <ul className='tech-items'>
                                     {technologies.map((technology, techIndex) => (

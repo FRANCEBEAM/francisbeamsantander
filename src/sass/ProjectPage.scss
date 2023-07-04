@@ -1,5 +1,9 @@
 @import '../index.scss';
 
+section.project-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 section.project-container{
     background: $bg-color;
