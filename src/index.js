@@ -6,20 +6,22 @@ import './index.scss';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import ProjectDetails from './components/ProjectDetails';
 
 
 const AppLayout = () => {
   const location = useLocation();
-
   const isProjectPage = location.pathname.startsWith('/projects')
+  const isUiuxProjectPage = location.pathname.startsWith('/uiux/')
 
 
   return(
     <>
-      {!isProjectPage && <Navbar />}
+      {!isProjectPage && !isUiuxProjectPage && <Navbar />}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path="/:id" element={<ProjectDetails />} />
       </Routes>
     </>
   )

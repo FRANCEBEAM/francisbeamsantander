@@ -1,0 +1,21 @@
+
+@import '../index.scss';
+
+section.details-section {
+
+    div.wrapper {
+        padding: 6em 1em;
+        min-height: 100vh;
+
+        .btn-back {
+            margin-top: 4em;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-weight: 800;
+            color: $font-headline;
+            gap: 4px;
+            font-size: 16px;
+        }
+    }
+}

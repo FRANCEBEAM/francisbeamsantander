@@ -3,6 +3,7 @@ import '../sass/UiuxDesign.scss'
 import { uiuxproject } from './PageTemplate'
 import { Link } from 'react-router-dom'
 
+
 const UiuxDesign = () => {
   return (
     <>
@@ -30,8 +31,8 @@ const UiuxDesign = () => {
             </div>
 
             <div className="project-container">
-                {uiuxproject.map((uiux, index) => (
-                    <Link to={uiux.link} className="card-project" key={index}>
+                {uiuxproject.map((uiux) => (
+                    <Link to={`/${uiux.id}`} className="card-project" key={uiux.id}>
                         <img src={uiux.img} alt={uiux.alt} />
                     </Link>
                 ))}
