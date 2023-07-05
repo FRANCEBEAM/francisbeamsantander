@@ -10,45 +10,34 @@ const ProjectArchive = () => {
     <>
     <section className='archive-section'>
         <div className="wrapper">
-            <div className="card-project">
-                <div className='img-content'>
-                    <img src="./assets/project3.jpg" alt="" />
-                </div>
-                <div className='content'>
-                    <Link className='head-content'>
-                        <h1>Modern Muse React</h1>
-                        <GoArrowUpRight size={16} />
-                    </Link>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde excepturi reiciendis velit placeat, aliquid, veritatis mollitia odio nostrum omnis labore eius facere iusto animi possimus necessitatibus consequuntur? Nam, dolor.</p>
-                    <ul className='tech-items'>
-                        <li className='tech-item'>PHP</li>
-                        <li className='tech-item'>Sass</li>
-                        <li className='tech-item'>JQuery</li>
-                        <li className='tech-item'>JavaScript</li>
-                        <li className='tech-item'>MaterialDesign</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className="card-project">
-                <div className='img-content'>
-                    <img src="./assets/project3.jpg" alt="" />
-                </div>
-                <div className='content'>
-                    <Link className='head-content'>
-                        <h1>Modern Muse React</h1>
-                        <GoArrowUpRight size={16} />
-                    </Link>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde excepturi reiciendis velit placeat, aliquid, veritatis mollitia odio nostrum omnis labore eius facere iusto animi possimus necessitatibus consequuntur? Nam, dolor.</p>
-                    <ul className='tech-items'>
-                        <li className='tech-item'>PHP</li>
-                        <li className='tech-item'>Sass</li>
-                        <li className='tech-item'>JQuery</li>
-                        <li className='tech-item'>JavaScript</li>
-                        <li className='tech-item'>MaterialDesign</li>
-                    </ul>
-                </div>
-            </div>
+        {
+            archive.map((arch, index)=>{
+                const technologies = Object.keys(arch.technologies).map((key) => arch.technologies[key]); 
+                return(
+                    <div className="card-project" key={index}>
+                        <div className="top-content">
+                            <div className='img-content'>
+                                <img src={arch.img} alt="" />
+                            </div>
+                        </div>
+                        <div className='content'>
+                            <Link className='head-content' to={arch.host}>
+                                <h1>{arch.title}</h1>
+                                <GoArrowUpRight size={16} />
+                            </Link>
+                            <p>{arch.description}</p>
+                            <ul className='tech-items'>
+                                {technologies.map((tech, techIndex) => (
+                                    <li className='tech-item' key={techIndex}>
+                                        {tech}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                )
+            })
+        }
         </div>
     </section>
     </>

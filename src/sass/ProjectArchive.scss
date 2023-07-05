@@ -23,7 +23,7 @@ section.archive-section {
             }
             div.img-content {
                 img {
-                    width: 200px;
+                    width: 120px;
                 }
             }
             div.content {
@@ -38,6 +38,7 @@ section.archive-section {
                     gap: 6px;
                     list-style: none;
                     font-size: 11px;
+                    flex-wrap: wrap;
                     li {
                         font-weight: 700;
                         padding: 9px;
@@ -46,6 +47,43 @@ section.archive-section {
                     }
                 }
 
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 648px) {
+    section.archive-section {
+        div.wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    section.archive-section {
+        div.wrapper {
+           max-width: 1000px;
+           margin: 0 auto;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           flex-wrap: wrap;
+            div.card-project {
+                width: 50%;
+                display: flex;
+                gap: 14px;
+                div.img-content {
+                    display: flex;
+                }
+                div.content {
+                    p {
+                        font-size: 12px;
+                        max-width: 400px;
+                    }
+                }
             }
         }
     }

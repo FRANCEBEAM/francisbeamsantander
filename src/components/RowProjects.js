@@ -62,7 +62,7 @@ const RowProjects = () => {
                                     <Link className='link-visit' to={project.live}>
                                         <button className='btn-visit' type='button'>
                                             VISIT PROJECT
-                                            <FaExternalLinkAlt size={16} />
+                                            <FaExternalLinkAlt size={14} />
                                         </button>
                                     </Link>
                                     <Link className='github' to={project.git}>

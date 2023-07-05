@@ -186,26 +186,67 @@ export const uiux = [
 export const archive = [
     {
         id: 1,
+        img: '',
         title: 'Drum pad App',
         description: 'A high-quality drum pad sound that I obtained from assets in FL Studio 12. The drums sound quite realistic and can be used for jamming with friends and enjoying the creation of a realistic band sound that will excite the user',
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
         gitHubLink: 'https://github.com/FRANCEBEAM/Drumpad-App-JS',
-        hostLink: 'https://francebeam.github.io/Drumpad-App-JS/'
+        host: 'https://francebeam.github.io/Drumpad-App-JS/'
     },
     {
         id: 2,
+        img: '',
         title: 'Todo List App',
         description: 'A simple and fancy to-do list app where users can add tasks, delete them, and mark tasks as done. I developed this app to practice my knowledge of vanilla JavaScript and the DOM concept, which I find really cool.',
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
         gitHubLink: 'https://github.com/FRANCEBEAM/Todo-App-JS',
-        hostLink: 'https://francebeam.github.io/Todo-App-JS/'
+        host: 'https://francebeam.github.io/Todo-App-JS/'
     },
     {
         id: 3,
+        img: '',
         title: 'Form Validation Community',
         description: 'Creating form validation from scratch, which involves the use of RegEx and DOM. It follows standard validation practices that ensure the UI behaves according to the user\'s input, capturing any key input accurately.',
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
         gitHubLink: 'https://github.com/FRANCEBEAM/Form-Validation-Community',
-        hostLink: 'https://francebeam.github.io/Form-Validation-Community/'
+        host: 'https://francebeam.github.io/Form-Validation-Community/'
+    },
+]
+
+export const uiuxproject = [
+    {
+        id: 1,
+        img: './assets/uiux1.jpg',
+        link: '/',
+        alt: 'UIUX Project 1',
+    },
+    {
+        id: 2,
+        img: './assets/uiux2.jpg',
+        link: '/',
+        alt: 'UIUX Project 1',
+    },
+    {
+        id: 3,
+        img: './assets/uiux3.jpg',
+        link: '/',
+        alt: 'UIUX Project 1',
+    },
+    {
+        id: 4,
+        img: './assets/uiux4.jpg',
+        link: '/',
+        alt: 'UIUX Project 1',
+    },
+    {
+        id: 5,
+        img: './assets/uiux1.jpg',
+        link: '/',
+        alt: 'UIUX Project 1',
+    },
+    {
+        id: 6,
+        img: './assets/uiux2.jpg',
+        link: '/',
     },
 ]
