@@ -69,6 +69,7 @@ section.hero-container {
         .hero-francis {
             bottom: 0;
             display: none;
+            animation-delay: 9000ms;
         }
 
         .blobs {
@@ -169,7 +170,7 @@ section.hero-container {
             max-width: 1200px;
             margin: 0 auto;
             position: relative;
-
+            animation-delay: 2000ms;
             .spiral {
                 display: block;
                 position: absolute;
@@ -191,6 +192,7 @@ section.hero-container {
                 position: absolute;
                 right: 100px;
                 z-index: 1;
+                // animation-delay: 2000ms;
             }
             
 
@@ -207,7 +209,7 @@ section.hero-container {
                 display: block;
                 bottom: 0;
                 right: 0px;
-                animation-delay: 4500ms;
+                animation-delay: 2000ms;
             ul.left-socials{
                 display: flex;
                 flex-direction: column;

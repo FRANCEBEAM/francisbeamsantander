@@ -14,7 +14,7 @@ const Projects = () => {
         <section className='project-section'>
           <div className="btn-container">
             <Link className='btn-back' to='/'>
-              <FiArrowLeft size={16} /> Francis Beam Santander
+              <FiArrowLeft className='arrowleft' size={16} /> Francis Beam Santander
             </Link>
           </div>
           <RowProjects />

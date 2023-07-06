@@ -4,6 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 import { HiOutlineMenuAlt3, HiX } from 'react-icons/hi';
 import useScrollListener from "../hooks/UseScroll";
+import 'animate.css';
 
 
 
@@ -30,7 +31,7 @@ const Navbar = () => {
   return (
     <>
     <nav className={`navbar-container ${navClassList.join(" ")}`} >
-      <div className='wrapper'>
+      <div className='animate__animated animate__fadeInDown wrapper'>
 
         <div className='logo'>
             <Link className='animate__animated animate__fadeInDown' to="/" onClick={closeMobileMenu}>

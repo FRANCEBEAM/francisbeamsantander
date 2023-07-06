@@ -1,14 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../sass/Hero.scss';
 import { Link } from 'react-router-dom';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { FiGithub, FiFacebook } from 'react-icons/fi'
 
 const Hero = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <>
     <section className='hero-container' id='home'>
-        <div className='wrapper'>
+        <div className='wrapper animate__animated animate__fadeIn'>
 
         <svg className='palette' width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_922_6468)">
@@ -88,11 +91,11 @@ const Hero = () => {
                 </ul>
             </div>
             <div className="hero-content">
-                <h3>FRONTEND WEB DEVELOPER</h3>
-                <h1>FRANCIS BEAM SANTANDER</h1>
-                <p>I build amazing <span>website</span>, and <span>web design</span> for quality products with great user experiences and passionate of creating interactive. Let’s build and work together.</p>
+                <h3 className='animate__animated animate__animated animate__fadeInLeft animate__delay-1s'>FRONTEND WEB DEVELOPER</h3>
+                <h1 className='animate__animated animate__fadeIn animate__delay-1s animate__slow-2s'>FRANCIS BEAM SANTANDER</h1>
+                <p className='animate__animated animate__fadeIn animate__delay-1s animate__slow-2s'>I build amazing <span>website</span>, and <span>web design</span> for quality products with great user experiences and passionate of creating interactive. Let’s build and work together.</p>
 
-                <div className='btn-content'>
+                <div className='btn-content animate__animated animate__fadeIn animate__delay-1s'>
                     <Link to='/projects' className="btn-projects" href="">
                         MY PROJECTS
                         <HiOutlineArrowNarrowRight size={24} />

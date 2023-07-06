@@ -13,9 +13,13 @@ section.project-section {
         align-items: center;
         text-decoration: none;
         font-weight: 800;
-        color: $font-headline;
+        color: $font-color;
         gap: 4px;
         font-size: 16px;
+    }
+    .btn-back:hover {
+        color: $primary-color;
+        transition: ease-in-out 0.3s;
     }
 }
 

@@ -1,9 +1,18 @@
 import React, { useEffect } from 'react';
 import { aboutContent, frontend, backend, tools } from '../components/PageTemplate';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 import '../sass/About.scss';
 
 const About = () => {
+    useEffect(()=>{
+        Aos.init({
+            duration: 1000,
+            once: true
+        });
+    }, []);
+
     useEffect(() => {
         const parallax = () => {
           const flatmountains = document.querySelector('.svg-container');
@@ -53,7 +62,7 @@ const About = () => {
 
             {
             aboutContent.map((about, index) =>(
-            <div className='wrapper'>
+            <div className='wrapper' data-aos="fade-up">
                 <div className="left-content">
                     <div className='francisbeam'>
                         <svg className='groupdotted' width="158" height="158" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,7 +260,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="right-content" key={index}>
-                    <h1>ABOUT ME</h1>
+                    <h1 className='animate__animated animate__fadeIn'>ABOUT ME</h1>
                     <p>{about.parag1}</p>
                     <p>{about.parag2}</p>
                     <div className='skills-tech'>

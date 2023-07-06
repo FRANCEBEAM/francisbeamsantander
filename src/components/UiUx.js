@@ -11,13 +11,13 @@ const UiUx = () => {
             <div className="head-container">
                 <h1 className='header-uiux'>UI/UX PROJECTS</h1>
             </div>
-            <div className="uiux-container">
+            <div className="uiux-container" data-aos="fade-up">
                 {
                 uiux.map((ui, index) => (
                 <div className='card-container' key={index}>
-                    <a href={ui.link}>
+                    <Link to={`/projects/${ui.id}`}>
                         <img src={ui.img} alt={ui.alt} />
-                    </a>
+                    </Link>
                 </div>
                 ))
                 }

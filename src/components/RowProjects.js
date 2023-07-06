@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../sass/Projects.scss'
 import { Link } from 'react-router-dom';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { projects } from './PageTemplate';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const RowProjects = () => {
+
+    useEffect(()=>{
+        Aos.init({
+            duration: 1000,
+            once: true,
+            easing: 'linear'
+        });
+    }, []);
 
     const truncate = (str, maxLength) => {
         if (str.length > maxLength) {
@@ -26,7 +36,7 @@ const RowProjects = () => {
                         const technologies = Object.keys(project.technologies).map((key) => project.technologies[key]);
                         const subcategories = Object.keys(project.sub).map((key) => project.sub[key])
                         return (
-                        <div className='card-project' key={index} data-aos="fade-up">
+                        <div className='card-project' key={index} >
                             <div className='right'>
                                 <figure>
                                     <img src={project.img} />
