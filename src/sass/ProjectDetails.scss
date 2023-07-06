@@ -2,20 +2,156 @@
 @import '../index.scss';
 
 section.details-section {
+    background: $bg2-color;
+    padding-top: 10px;
 
     div.wrapper {
-        padding: 6em 1em;
+        padding: 1em 1em;
         min-height: 100vh;
+        margin: 0 auto;
+        max-width: 1200px;
 
         .btn-back {
             margin-top: 4em;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             text-decoration: none;
             font-weight: 800;
-            color: $font-headline;
+            color: $font-white;
             gap: 4px;
             font-size: 16px;
+        }
+
+        div.project-details {
+            padding-top: 4em;
+            max-width: 1200px;
+            margin: 0 auto;
+
+            div.top-content {
+                h1 {
+                    color: $font-white;
+                    font-size: clamp(26px, 8vw, 42px);
+                }
+                p {
+                    padding-top: 14px;
+                    font-size: clamp(16px, 4vw, 20px);
+                    color: $font-white;
+                }
+                img {
+                    padding-top: 4em;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            }
+
+            .overview-content {
+                padding-top: 46px;
+                padding-bottom: 54px;
+                max-width: 700px;
+                font-weight: 300;
+                p.overview-head {
+                    color: $font-white;
+                }
+                p.overview-desc {
+                    line-height: 27px;
+                    color: $font-white;
+                    padding-top: 14px;
+                }
+            }
+
+            .process-content {
+                border-top: solid 1px #F9F9F9;
+                padding-top: 54px;
+                .color-palette {
+                    h1{
+                        color: $font-white;
+                        font-size: clamp(20px, 8vw, 26px);
+                    }
+
+                    .palette-img {
+                        padding-top: 46px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+                .typography {
+                    padding-top: 24px;
+                    h1{
+                        color: $font-white;
+                        font-size: clamp(20px, 8vw, 26px);
+                    }
+
+                    .typography-img {
+                        padding-top: 46px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .project-outcome {
+                padding-top: 4em;
+                h1 {
+                    color: $font-white;
+                    font-size: clamp(20px, 8vw, 26px);
+                }
+                ul.outcome-items {
+                    list-style: none;
+                    li.outcome-item {
+                        padding-top: 46px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .final-outcome {
+                padding-top: 24px;
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    section.details-section {
+        div.wrapper {
+            padding: 1em 1em;    
+            div.project-details {
+              
+                .process-content {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 34px;
+    
+                    .typography {
+                        padding: 0;
+                        div.typography-img {
+                            img {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+
+                .project-outcome {
+                    ul.outcome-items {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 34px;
+                    }
+                }
+    
+            }
         }
     }
 }

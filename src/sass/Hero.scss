@@ -1,6 +1,44 @@
 
 @import '../index';
 
+//animation
+@keyframes updown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .palette {
+    animation: updown 4s ease-in-out infinite;
+  }
+
+  .htmlcoding {
+    animation: updown 2s ease-in-out infinite;
+  }
+
+@keyframes updown2 {
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-40px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+
+  .curlybraces {
+    animation: updown2 5s ease-in-out infinite;
+  }
+
+
 section.hero-container {
     div.wrapper {
         padding: 0 1em;

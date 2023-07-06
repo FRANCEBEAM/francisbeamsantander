@@ -295,7 +295,7 @@ const About = () => {
             </div>
             ))
             }
-                <div className="svg-container" data-speed="0.4">
+                <div className="svg-container" data-speed="0.3">
                     <svg className="mountains" width="1593" height="415" viewBox="0 0 1593 415" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M915.3 0L539.1 415H1310.4L915.3 0Z" fill="#332FD0"/>
                     <path d="M915.3 0L839.61 415H1310.4L915.3 0Z" fill="#3D155F"/>

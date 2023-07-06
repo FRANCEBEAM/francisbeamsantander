@@ -12,7 +12,7 @@ import ProjectDetails from './components/ProjectDetails';
 const AppLayout = () => {
   const location = useLocation();
   const isProjectPage = location.pathname.startsWith('/projects')
-  const isUiuxProjectPage = location.pathname.startsWith('/uiux/')
+  const isUiuxProjectPage = location.pathname.startsWith('projects/')
 
 
   return(
@@ -21,7 +21,7 @@ const AppLayout = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
-        <Route path="/:id" element={<ProjectDetails />} />
+        <Route path="projects/:id" element={<ProjectDetails />} />
       </Routes>
     </>
   )

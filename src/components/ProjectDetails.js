@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 import { useParams } from 'react-router-dom';
@@ -8,6 +8,10 @@ import '../sass/ProjectDetails.scss';
 const ProjectDetails = () => {
     const { id } = useParams();
     const uiux = uiuxproject.find((uiux) => uiux.id === parseInt(id));
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <>
     <section className='details-section'>
@@ -18,44 +22,55 @@ const ProjectDetails = () => {
                 </Link>
             </div>
 
-            <div className='project-details'>
-                {uiux && (
-                    <div id={uiux.id}>
-                        <div className="top-content">
-                            <h1>{uiux.title}</h1>
-                            <p>{uiux.type}</p>
-                            <img src={uiux.img} alt={uiux.alt} />
-                        </div>
-                        <div className="overview-content">
-                            <p>OVERVIEW</p>
-                            <p>{uiux.overview}</p>
-                        </div>
+            {uiux && (
+            <div className='project-details' id={uiux.id}>
+                    
+                <div className="top-content">
+                    <h1>{uiux.title}</h1>
+                    <p>{uiux.type}</p>
+                    <img src={uiux.img} alt={uiux.alt} />
+                </div>
 
-                        <div className='line-br'></div>
+                <div className="overview-content">
+                    <p className='overview-head'>OVERVIEW</p>
+                    <p className='overview-desc'>{uiux.overview}</p>
+                </div>
 
-                        <div className="process-content">
-                            <div className='color-palette'>
-                                <h1>Color Palette</h1>
-                                <div className="palette-img">
-                                    <img src={uiux.palette} alt="" />
-                                </div>
-                            </div>
-                            <div className='typography'>
-                                <h1>Typography</h1>
-                                <div className='typography-img'>
-                                    <img src={uiux.typography} alt="" />
-                                </div>
-                            </div>
-                        </div>
+                <div className='line-br'></div>
 
-                        <div className='project-outcome'>
-                            <div className="outcome">
-                                <img src={uiux.outcome} alt="" />
-                            </div>
+                <div className="process-content">
+                    <div className='color-palette'>
+                        <h1>Color Palette</h1>
+                        <div className="palette-img">
+                            <img src={uiux.palette} alt="" />
                         </div>
                     </div>
-                )}
+                    <div className='typography'>
+                        <h1>Typography</h1>
+                        <div className='typography-img'>
+                            <img src={uiux.typography} alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className='project-outcome'>
+                    <h1>Project Outcome</h1>
+                    <ul className="outcome-items">
+                        {uiux.outcome.map((image, index) => (
+                        <li className='outcome-item' key={index}>
+                            <img src={image} alt="" />
+                        </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div className='final-outcome'>
+                    {
+                        <img src={uiux.finalOutcome} alt='' />
+                    }
+                </div>
             </div>
+            )}
         </div>
     </section>
     </>
