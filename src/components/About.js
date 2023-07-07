@@ -16,20 +16,22 @@ const About = () => {
     useEffect(() => {
         const parallax = () => {
           const flatmountains = document.querySelector('.svg-container');
+          if (!flatmountains) return; // Exit the function if element doesn't exist
+      
           const speed = flatmountains.getAttribute('data-speed');
-    
           const scrolled = window.pageYOffset;
           const parallaxEffect = scrolled * speed;
-    
+      
           flatmountains.style.transform = `translateY(-${parallaxEffect}px)`;
         };
-    
+      
         window.addEventListener('scroll', parallax);
-    
+      
         return () => {
           window.removeEventListener('scroll', parallax);
         };
       }, []);
+      
     
 
   return (

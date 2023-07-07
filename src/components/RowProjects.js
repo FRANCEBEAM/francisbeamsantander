@@ -69,13 +69,13 @@ const RowProjects = () => {
                               
             
                                 <div className='btn-section'>
-                                    <Link className='link-visit' to={project.live}>
+                                    <Link className='link-visit' to={project.live} target="_blank" rel="noopener noreferrer">
                                         <button className='btn-visit' type='button'>
                                             VISIT PROJECT
                                             <FaExternalLinkAlt size={14} />
                                         </button>
                                     </Link>
-                                    <Link className='github' to={project.git}>
+                                    <Link className='github' to={project.git} target="_blank" rel="noopener noreferrer">
                                         <FaGithub size={24} />
                                     </Link>
                                 </div>

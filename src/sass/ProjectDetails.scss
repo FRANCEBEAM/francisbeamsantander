@@ -22,6 +22,15 @@ section.details-section {
             font-size: 16px;
         }
 
+        .btn-back .arrowleft {
+            transform: translate(0, 0);
+            transition: transform 0.3s ease;
+        }
+    
+        .btn-back:hover .arrowleft {
+            transform: translate(-10px, 0);
+        }
+
         div.project-details {
             padding-top: 4em;
             max-width: 1200px;

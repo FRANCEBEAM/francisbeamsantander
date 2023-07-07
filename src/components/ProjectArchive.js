@@ -21,9 +21,9 @@ const ProjectArchive = () => {
                             </div>
                         </div>
                         <div className='content'>
-                            <Link className='head-content' to={arch.host}>
+                            <Link className='head-content' to={arch.host} target="_blank" rel="noopener noreferrer">
                                 <h1>{arch.title}</h1>
-                                <GoArrowUpRight size={16} />
+                                <GoArrowUpRight className='arrowright' size={16} />
                             </Link>
                             <p>{arch.description}</p>
                             <ul className='tech-items'>

@@ -13,9 +13,6 @@ const Footer = () => {
           <div className='first-row'>
             <ul className='col-1'>
               <li>
-                <h1>francebeam</h1>
-              </li>
-              <li>
                 <HiOutlineMail size={24}/>santanderfrancisbeam@gmail.com
               </li>
               <li>

@@ -1,5 +1,9 @@
 @import '../index.scss';
 
+.disable-scroll-behavior {
+    scroll-behavior: auto !important;
+}
+
 section.project-section {
     padding-top: 1rem;
     .btn-container {
@@ -17,6 +21,16 @@ section.project-section {
         gap: 4px;
         font-size: 16px;
     }
+
+    .btn-back .arrowleft {
+        transform: translate(0, 0);
+        transition: transform 0.3s ease;
+    }
+
+    .btn-back:hover .arrowleft {
+        transform: translate(-10px, 0);
+    }
+
     .btn-back:hover {
         color: $primary-color;
         transition: ease-in-out 0.3s;

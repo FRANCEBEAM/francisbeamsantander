@@ -24,18 +24,18 @@ const OtherProjects = () => {
             {
                 otherProject.map((item, index)=>{
                     return(
-                    <Link className='card-project' key={index} to={item.hostLink} data-aos="fade-up">
+                    <Link className='card-project' key={index} to={item.hostLink} target="_blank" rel="noopener noreferrer" data-aos="fade-up">
                         <div className='card-content' to={item.hostLink}>
                             <div className='project-icons'>
                                 <FaRegFolder size={36} color='#3D155F'/>
                                 <ul className='project-links'>
                                     <li className='project-link'>
-                                        <Link className='link' to={item.gitHubLink}>
+                                        <Link className='link' to={item.gitHubLink} target="_blank" rel="noopener noreferrer">
                                             <FiGithub size={22}/>
                                         </Link>
                                     </li> 
                                     <li className='project-link'>
-                                        <Link className='link' to={item.hostLink}>
+                                        <Link className='link' to={item.hostLink} target="_blank" rel="noopener noreferrer">
                                             <FiExternalLink size={22}/>
                                         </Link>
                                     </li> 

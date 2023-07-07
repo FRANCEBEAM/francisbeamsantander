@@ -9,6 +9,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer'
 
 const Projects = () => {
+ 
   return (
     <>
         <section className='project-section'>

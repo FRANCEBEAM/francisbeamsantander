@@ -9,16 +9,13 @@ const ProjectDetails = () => {
     const { id } = useParams();
     const uiux = uiuxproject.find((uiux) => uiux.id === parseInt(id));
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
   return (
     <>
     <section className='details-section'>
         <div className="wrapper">
             <div className="btn-container">
                 <Link className='btn-back' to='/projects'>
-                <FiArrowLeft size={16} /> All Projects
+                <FiArrowLeft className='arrowleft' size={16} /> All Projects
                 </Link>
             </div>
 

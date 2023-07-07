@@ -87,7 +87,7 @@ export const projects = [
             'Sass',
             'Material Design'
         ],
-        img: './assets/project1.jpg',
+        img: '../assets/project1.jpg',
         desc: 'Developed a fullstack web application using PHP, JavaScript and Sass from scratch. This web application are integrated by the backend using MySQL database. The user should create a account with have features of email verifications and nice form validation. After that, they can freely order or add to cart some products that are available on online and has a payment method of walk-in or order which will label on our database.',
         live: 'https://testwebsite0528.000webhostapp.com/',
         git: 'https://github.com/FRANCEBEAM/eCommerce-Develop-Update-'
@@ -103,7 +103,7 @@ export const projects = [
             'React ',
             'Tailwind CSS '
         ],
-        img: './assets/project2.jpg',
+        img: '../assets/project2.jpg',
         desc: 'My first React clone project uses the Axios library to fetch data from an API and make specific requests. I am experimenting and learning how to use useEffect and useState, which drive our web application and ensure smooth API integration.',
         live: 'https://francebeam.github.io/netflix-clone-reactjs/',
         git: 'https://github.com/FRANCEBEAM/netflix-clone-reactjs'
@@ -121,7 +121,7 @@ export const projects = [
             'Tailwind ',
             'Node js '
         ],
-        img: './assets/project3.jpg',
+        img: '../assets/project3.jpg',
         desc: 'I developed a React E-commerce project from scratch. It includes products such as merchandise, stickers, patches, and game miniatures. This project follows the concept of an online store, although the backend is still a work in progress. Currently, it is only a frontend implementation.',
         live: 'https://francebeam.github.io/frogman-ecommerce-react/',
         git: 'https://github.com/FRANCEBEAM/frogman-ecommerce-react'

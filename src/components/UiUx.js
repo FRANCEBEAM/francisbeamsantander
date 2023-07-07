@@ -1,7 +1,7 @@
 import React from 'react';
 import '../sass/Uiux.scss';
 import { uiux } from './PageTemplate';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const UiUx = () => {
   return (
@@ -23,7 +23,7 @@ const UiUx = () => {
                 }
             </div>
             <div className='showmore'>
-                <Link className='btn-showmore' to='/projects'>
+                <Link className='btn-showmore' to='projects/'>
                     Show More
                 </Link>
             </div>

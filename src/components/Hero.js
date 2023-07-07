@@ -5,9 +5,6 @@ import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { FiGithub, FiFacebook } from 'react-icons/fi'
 
 const Hero = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
   return (
     <>
     <section className='hero-container' id='home'>
