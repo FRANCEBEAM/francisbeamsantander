@@ -43,8 +43,9 @@ section.details-section {
                 }
                 p {
                     padding-top: 14px;
-                    font-size: clamp(16px, 4vw, 20px);
+                    font-size: clamp(16px, 4vw, 18px);
                     color: $font-white;
+                    font-weight: 300;
                 }
                 img {
                     padding-top: 4em;
@@ -102,8 +103,24 @@ section.details-section {
                 }
             }
 
+            .project-wireframe {
+                padding-top: 46px;
+                h1 {
+                    color: $font-white;
+                    font-size: clamp(20px, 8vw, 26px);
+                }
+                .wireframe-img{
+                    padding-top: 46px;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+
             .project-outcome {
-                padding-top: 4em;
+                padding-top: 2em;
                 h1 {
                     color: $font-white;
                     font-size: clamp(20px, 8vw, 26px);

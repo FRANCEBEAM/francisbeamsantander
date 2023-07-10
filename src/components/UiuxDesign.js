@@ -33,7 +33,7 @@ const UiuxDesign = () => {
             <div className="project-container" data-aos="fade-up">
                 {uiuxproject.map((uiux) => (
                     <Link to={`/projects/${uiux.id}`} className="card-project" key={uiux.id}>
-                        <img src={uiux.img} alt={uiux.alt} />
+                        <img src={uiux.banner} alt={uiux.alt} />
                     </Link>
                 ))}
             </div>

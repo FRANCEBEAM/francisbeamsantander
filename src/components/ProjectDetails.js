@@ -25,7 +25,8 @@ const ProjectDetails = () => {
                 <div className="top-content">
                     <h1>{uiux.title}</h1>
                     <p>{uiux.type}</p>
-                    <img src={uiux.img} alt={uiux.alt} />
+                    <p>{uiux.year}</p>
+                    <img src={uiux.cover} alt={uiux.alt} />
                 </div>
 
                 <div className="overview-content">
@@ -47,6 +48,13 @@ const ProjectDetails = () => {
                         <div className='typography-img'>
                             <img src={uiux.typography} alt="" />
                         </div>
+                    </div>
+                </div>
+
+                <div className='project-wireframe'>
+                    <h1>Wireframe</h1>
+                    <div className="wireframe-img">
+                        <img src={uiux.wireFrame} alt="" />
                     </div>
                 </div>
 
