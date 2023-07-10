@@ -90,7 +90,7 @@ const Hero = () => {
             <div className="hero-content">
                 <h3 className='animate__animated animate__animated animate__fadeInLeft animate__delay-1s'>FRONTEND WEB DEVELOPER</h3>
                 <h1 className='animate__animated animate__fadeIn animate__delay-1s animate__slow-2s'>FRANCIS BEAM SANTANDER</h1>
-                <p className='animate__animated animate__fadeIn animate__delay-1s animate__slow-2s'>I build amazing <span>website</span>, and <span>web design</span> for quality products with great user experiences and passionate of creating interactive. Let’s build and work together.</p>
+                <p className='animate__animated animate__fadeIn animate__delay-1s animate__slow-2s'>I build amazing <span>Website</span>, and <span>UI/UX Design</span> for quality products with great user experiences and passionate of creating interactive. Let’s build and work together.</p>
 
                 <div className='btn-content animate__animated animate__fadeIn animate__delay-1s'>
                     <Link to='/projects' className="btn-projects" href="">

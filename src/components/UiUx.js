@@ -16,7 +16,7 @@ const UiUx = () => {
                 uiux.map((ui, index) => (
                 <div className='card-container' key={index}>
                     <Link to={`/projects/${ui.id}`}>
-                        <img src={ui.img} alt={ui.alt} />
+                        <img src={ui.img} alt={ui.alt} draggable='false' />
                     </Link>
                 </div>
                 ))

@@ -57,10 +57,17 @@ section.uiuxdesign-section {
             display: flex;
             flex-direction: column;
             .card-project {
+                overflow: hidden;
                 img {
                     width: 100%;
                 }
+                img {
+                    transition: transform 0.9s ease;
+                    }
             }
+            .card-project:hover img {
+                transform: scale(1.1);
+                }
         }
     }
 }

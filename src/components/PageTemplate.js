@@ -1,4 +1,8 @@
 
+import { MdViewQuilt, MdDesktopWindows } from 'react-icons/md';
+import { AiFillCode } from 'react-icons/ai';
+import { RiCodeBoxFill } from 'react-icons/ri';
+
 
 export const aboutContent = [
     {
@@ -152,6 +156,27 @@ export const otherProject = [
         technologies: ['HTML ', 'CSS ', 'JavaScript '],
         gitHubLink: 'https://github.com/FRANCEBEAM/Form-Validation-Community',
         hostLink: 'https://francebeam.github.io/Form-Validation-Community/'
+    },
+]
+
+export const workContent = [
+    {
+        id: 1,
+        icon: <MdViewQuilt size={70} />,
+        work: 'UI/UX DESIGN',
+        description: 'I crafting and creating visually appealing and immersive user interfaces. I specialize in implementing my own designs, focusing on style layouts, font choices, and logo integration. I have a deep appreciation for art and stylish aesthetics, which I incorporate into my UI designs to create engaging and enjoyable user experiences.'
+    },
+    {
+        id: 2,
+        icon: <RiCodeBoxFill size={70} />,
+        work: 'FRONTEND DEVELOPMENT',
+        description: 'I build responsive websites that adapt seamlessly to various screen sizes. I am proficient in working with popular frontend framework and libraries, including Bootstrap, Tailwind CSS, jQuery, and React JS. These tools allow me to develop and enhance the functionality of web applications while ensuring a smooth and intuitive user experience.'
+    },
+    {
+        id: 3,
+        icon: <AiFillCode size={70} />,
+        work: 'BACKEND DEVELOPMENT',
+        description: 'I’m probably not the typical backend dev, while my focus lies in backend development, I also possess a strong understanding of frontend principles, which allows me to contribute valuable insights to the overall development process. I can still build website using PHP for web applications that meet the requirements of the functionality behind the website. '
     },
 ]
 

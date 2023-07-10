@@ -26,7 +26,7 @@ const ProjectDetails = () => {
                     <h1>{uiux.title}</h1>
                     <p>{uiux.type}</p>
                     <p>{uiux.year}</p>
-                    <img src={uiux.cover} alt={uiux.alt} />
+                    <img src={uiux.cover} alt={uiux.alt} draggable='false' />
                 </div>
 
                 <div className="overview-content">
@@ -40,13 +40,13 @@ const ProjectDetails = () => {
                     <div className='color-palette'>
                         <h1>Color Palette</h1>
                         <div className="palette-img">
-                            <img src={uiux.palette} alt="" />
+                            <img src={uiux.palette} alt="" draggable='false' />
                         </div>
                     </div>
                     <div className='typography'>
                         <h1>Typography</h1>
                         <div className='typography-img'>
-                            <img src={uiux.typography} alt="" />
+                            <img src={uiux.typography} alt="" draggable='false' />
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const ProjectDetails = () => {
                 <div className='project-wireframe'>
                     <h1>Wireframe</h1>
                     <div className="wireframe-img">
-                        <img src={uiux.wireFrame} alt="" />
+                        <img src={uiux.wireFrame} alt="" draggable='false' />
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@ const ProjectDetails = () => {
                     <ul className="outcome-items">
                         {uiux.outcome.map((image, index) => (
                         <li className='outcome-item' key={index}>
-                            <img src={image} alt="" />
+                            <img src={image} alt="" draggable='false' />
                         </li>
                         ))}
                     </ul>
@@ -71,7 +71,7 @@ const ProjectDetails = () => {
 
                 <div className='final-outcome'>
                     {
-                        <img src={uiux.finalOutcome} alt='' />
+                        <img src={uiux.finalOutcome} alt='' draggable='false' />
                     }
                 </div>
             </div>

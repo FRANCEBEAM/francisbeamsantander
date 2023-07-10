@@ -1,0 +1,35 @@
+
+@import '../index.scss';
+
+
+div.message-container {
+    min-height: 100vh;
+    background: $bg2-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div.wrapper {
+        div.content {
+            align-items: center;
+            display: flex;
+            gap: 12px;
+            h1 {
+                color: $font-white;
+                font-weight: 800;
+            }
+            p {
+                color: $font-white;
+                font-weight: 300;
+            }
+        }
+        div.btn-home {
+            padding-top: 20px;
+            .home {
+                list-style: none;
+                color: $font-white;
+                justify-content: center;
+                display: flex;
+            }
+        }
+    }
+}
