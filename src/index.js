@@ -25,7 +25,7 @@ const AppLayout = () => {
       {showNavbar && <Navbar />}
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="https://francebeam.github.io/francisbeamsantander/" element={<Home />} />
         <Route path="/projects/*" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectDetails />} />
         <Route path="/404" element={<NotFound />} />
@@ -38,7 +38,7 @@ const AppLayout = () => {
 
 
 ReactDOM.render(
-  <Router basename='/francisbeamsantander'>
+  <Router basename='https://francebeam.github.io/francisbeamsantander'>
     <AppLayout />
   </Router>,
   document.getElementById('root')
