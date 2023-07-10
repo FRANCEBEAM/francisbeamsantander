@@ -183,22 +183,22 @@ export const workContent = [
 export const uiux = [
     {
         id: 1,
-        img: "./assets/hpbanner.jpg",
+        img: "../assets/hpbanner.jpg",
         alt: "Hyperview Music Studio",
     },
     {
         id: 2,
-        img: "./assets/mohbanner.jpg",
+        img: "../assets/mohbanner.jpg",
         alt: "Medal of Honor Landing Page",
     },
     {
         id: 3,
-        img: "./assets/transitbanner.jpg",
+        img: "../assets/transitbanner.jpg",
         alt: "Transit Ease Bus App",
     },
     {
         id: 4,
-        img: "./assets/basicbanner.jpg",
+        img: "../assets/basicbanner.jpg",
         alt: "BASIC Clothing E-Commerce",
     }
 ]
