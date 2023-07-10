@@ -38,7 +38,7 @@ const AppLayout = () => {
 
 
 ReactDOM.render(
-  <Router basename='francisbeamsantander'>
+  <Router basename='/francisbeamsantander'>
     <AppLayout />
   </Router>,
   document.getElementById('root')

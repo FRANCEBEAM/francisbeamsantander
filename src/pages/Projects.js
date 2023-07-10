@@ -14,7 +14,7 @@ const Projects = () => {
     <>
         <section className='project-section'>
           <div className="btn-container">
-            <Link className='btn-back' to='/'>
+            <Link className='btn-back' to='https://francebeam.github.io/francisbeamsantander/'>
               <FiArrowLeft className='arrowleft' size={16} /> Francis Beam Santander
             </Link>
           </div>
