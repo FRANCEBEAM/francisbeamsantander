@@ -22,7 +22,6 @@ const Projects = () => {
           <ProjectArchive />
           <UiuxDesign />
           <Contact />
-          <Footer />
         </section>
     </>
   )
