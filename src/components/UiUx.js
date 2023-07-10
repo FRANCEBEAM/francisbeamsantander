@@ -23,7 +23,7 @@ const UiUx = () => {
                 }
             </div>
             <div className='showmore'>
-                <Link className='btn-showmore' to='projects/'>
+                <Link className='btn-showmore' to='/projects'>
                     Show More
                 </Link>
             </div>
