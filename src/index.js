@@ -25,7 +25,7 @@ const AppLayout = () => {
       {showNavbar && <Navbar />}
       <ScrollToTop />
       <Routes>
-        <Route path="https://francebeam.github.io/francisbeamsantander/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/projects/*" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectDetails />} />
         <Route path="/404" element={<NotFound />} />
