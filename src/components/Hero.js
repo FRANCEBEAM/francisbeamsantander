@@ -58,7 +58,7 @@ const Hero = () => {
             <svg className='zigzagline' width="96" height="87" viewBox="0 0 96 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 2C16.0075 4.25732 84.0852 10.0453 86.0451 15.5439C88.005 21.0425 15.0852 30.0139 13.7594 34.9916C12.4336 39.9693 79.0125 41.1269 78.0902 45.41C77.1679 49.6932 9.49373 57.3333 8.22556 60.6904C6.95739 64.0474 70.5389 62.7741 70.4812 65.5523C70.4236 68.3305 3.9599 74.1186 7.8797 77.3598C11.7995 80.6011 79.6466 83.7266 94 85" stroke="#202020" stroke-width="3" stroke-linecap="round"/>
             </svg>
-            <img className='hero-francis' src="./assets/francis.png" alt="francis beam santander" draggable="false" />
+            <img className='hero-francis' src="../../public/assets/francis.png" alt="francis beam santander" draggable="false" />
             <svg className='blobs' width="416" height="302" viewBox="0 0 416 302" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M409 74.1448C409 129.856 300.25 148 208.924 148C122.932 148 25 126.601 25 74.1448C25 21.6261 122.83 -1.25089e-05 208.924 -8.74562e-06C300.346 -4.74941e-06 409 18.3754 409 74.1448Z" fill="#F7D046"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M384 169.131C384 219.572 275.25 236 183.924 236C97.932 236 -1.63818e-06 216.625 4.37859e-07 169.131C2.51637e-06 121.58 97.8299 102 183.924 102C275.346 102 384 118.637 384 169.131Z" fill="#F7D046"/>
