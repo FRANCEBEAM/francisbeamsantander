@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/francisbeamsantander/static/css/main.23b4abf9.css",
-    "main.js": "/francisbeamsantander/static/js/main.1b7e195e.js",
+    "main.js": "/francisbeamsantander/static/js/main.f3aa6d66.js",
     "static/media/francisbeamsantander.jpg": "/francisbeamsantander/static/media/francisbeamsantander.99cfbda6c3b721cd4050.jpg",
     "index.html": "/francisbeamsantander/index.html",
     "main.23b4abf9.css.map": "/francisbeamsantander/static/css/main.23b4abf9.css.map",
-    "main.1b7e195e.js.map": "/francisbeamsantander/static/js/main.1b7e195e.js.map"
+    "main.f3aa6d66.js.map": "/francisbeamsantander/static/js/main.f3aa6d66.js.map"
   },
   "entrypoints": [
     "static/css/main.23b4abf9.css",
-    "static/js/main.1b7e195e.js"
+    "static/js/main.f3aa6d66.js"
   ]
 }
