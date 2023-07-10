@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className='animate__animated animate__fadeInDown wrapper'>
 
         <div className='logo'>
-            <Link className='animate__animated animate__fadeInDown' to="/" onClick={closeMobileMenu}>
+            <Link className='animate__animated animate__fadeInDown' to="https://francebeam.github.io/francisbeamsantander/" onClick={closeMobileMenu}>
               <img src="./assets/fblogovar1.svg" width={50}  alt="" />
             </Link>
         </div>
