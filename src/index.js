@@ -12,7 +12,7 @@ import ScrollToTop from './components/ScrollToTop';
 import NotFound from './components/NotFound';
 
 
-const AppLayout = () => {
+const AppLayout = () =>  {
   const location = useLocation();
   const isProjectPage = location.pathname.startsWith('/projects');
   const isUiuxProjectPage = location.pathname.startsWith('projects/');
