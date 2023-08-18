@@ -104,7 +104,7 @@ export const projects = [
             'Streaming Service'
         ],
         technologies: [
-            'React ',
+            'React JS',
             'Tailwind CSS '
         ],
         img: './assets/project2.jpg',
@@ -121,7 +121,7 @@ export const projects = [
             'Merch Shop'
         ],
         technologies: [
-            'React ',
+            'React JS ',
             'Tailwind ',
             'Node js '
         ],
@@ -129,6 +129,23 @@ export const projects = [
         desc: 'I developed a React E-commerce project from scratch. It includes products such as merchandise, stickers, patches, and game miniatures. This project follows the concept of an online store, although the backend is still a work in progress. Currently, it is only a frontend implementation.',
         live: 'https://francebeam.github.io/frogman-ecommerce-react/',
         git: 'https://github.com/FRANCEBEAM/frogman-ecommerce-react'
+    },
+    {
+        id: 4,
+        title: 'E-Commerce BASIC Clothing',
+        sub: [
+            'Ecommerce',
+            'Clothing',
+            'Shop'
+        ],
+        technologies: [
+            'React JS ',
+            'Tailwind CSS ',
+        ],
+        img: './assets/project4.jpg',
+        desc: 'I developed an E-Commerce BASIC Clothing Shop using React JS and Tailwind CSS. I utilized the fetch method to interact with a clothing API and worked with JSON files. This project was initially conceived for UI/UX design and later developed into a full-fledged project.',
+        live: 'https://francebeam.github.io/basic-clothing-frontend/',
+        git: 'https://github.com/FRANCEBEAM/basic-clothing-frontend'
     }
 ]
 
